@@ -102,3 +102,44 @@ links.forEach(link=>{
   });
 
 });
+
+const informes =
+document.querySelectorAll(".informes");
+
+function mostrarInformes(){
+
+  const trigger =
+  window.innerHeight / 1.15;
+
+  informes.forEach(info=>{
+
+    const top =
+    info.getBoundingClientRect().top;
+
+    if(top < trigger){
+
+      info.style.opacity = "1";
+      info.style.transform = "translateY(0)";
+
+    }
+
+  });
+
+}
+
+// ESTILOS INICIALES
+
+informes.forEach(info=>{
+
+  info.style.opacity = "0";
+  info.style.transform = "translateY(30px)";
+  info.style.transition = "0.7s";
+
+});
+
+window.addEventListener(
+  "scroll",
+  mostrarInformes
+);
+
+mostrarInformes();
