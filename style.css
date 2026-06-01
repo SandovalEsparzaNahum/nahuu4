@@ -329,3 +329,48 @@ footer h3{
   color:#38bdf8;
   transform:rotate(90deg);
 }
+css
+/* INFORMES */
+
+.informes{
+  margin-top:20px;
+}
+
+.informes h3{
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+.informes ul{
+  padding-left:20px;
+  margin-bottom:20px;
+}
+
+.informes li{
+  margin-bottom:10px;
+  line-height:1.5;
+  color:#e2e8f0;
+}
+
+/* VIDEO / AUDIO */
+
+.media{
+  margin-top:20px;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.informes{
+  opacity:0;
+  transform:translateY(30px);
+  transition:.7s;
+}
+
+/* VIDEO */
+
+.media iframe{
+  border:none;
+  border-radius:15px;
+}
+
+
