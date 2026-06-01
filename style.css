@@ -372,5 +372,61 @@ css
   border:none;
   border-radius:15px;
 }
+.reporte{
+  margin-bottom:12px;
+  border-radius:15px;
+  overflow:hidden;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(56,189,248,.25);
+  transition:.4s;
+}
+
+.reporte:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0 15px rgba(56,189,248,.3);
+}
+
+.reporte-header{
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.reporte-header span{
+  color:#38bdf8;
+  font-size:22px;
+  transition:.4s;
+}
+
+.reporte-body{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .5s ease;
+}
+
+.reporte-body p{
+  padding:15px;
+  color:#cbd5e1;
+  line-height:1.7;
+}
+
+.reporte.active .reporte-body{
+  max-height:300px;
+}
+
+.reporte.active .reporte-header span{
+  transform:rotate(45deg);
+}
+
+.reporte.active{
+  background:linear-gradient(
+    135deg,
+    rgba(56,189,248,.15),
+    rgba(56,189,248,.05)
+  );
+}
 
 
