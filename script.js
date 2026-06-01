@@ -143,3 +143,18 @@ window.addEventListener(
 );
 
 mostrarInformes();
+const reportes =
+document.querySelectorAll(".reporte");
+
+reportes.forEach(reporte=>{
+
+  const header =
+  reporte.querySelector(".reporte-header");
+
+  header.addEventListener("click",()=>{
+
+    reporte.classList.toggle("active");
+
+  });
+
+});
